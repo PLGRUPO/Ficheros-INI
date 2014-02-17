@@ -36,7 +36,25 @@ span.blanks { background-color: white }
 span.nameEqualValue { background-color: green }
 span.error { background-color: red }
 
-body
-{
- background-color:#b0c4de;  /* blue */
+body { 
+  background: url(./images.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 5px;
 }
+
+.box{
+	 background-color:#FFF;
+	width: auto;
+-moz-box-shadow: 0 0 10px #888;
+-webkit-box-shadow: 0 0 10px#888;
+box-shadow: 0 0 10px #888;
+}
+
+
+
+
+
+

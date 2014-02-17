@@ -28,7 +28,7 @@ function calculate(evt) {
 var temp = '<li> <span class = "<%= t.type %>"> <%= s %> </span>\n';
 
 function tokensToString(tokens) {
-    alert(tokens.length);
+  //  alert(tokens.length);
     var r = '';
     for(var i in tokens) {
 	var t = tokens[i];
