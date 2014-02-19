@@ -41,10 +41,10 @@ function tokensToString(tokens) {
 
 function lexer(input) {
     var blanks         = /^\s*(?:\r?\n|$)/;
-    var iniheader      = /^\[\w+\](?:\r?\n|$)/;
-    var comments       = /^;.*?(?:\r?\n|$)/;
-    var nameEqualValue = /^[^\s=]*?\s*=\s*.*?(?:\r?\n|$)/;
-    var any            = /^.*(?:\r?\n|$)/;
+    var iniheader      = /^\[([^\[\]]+)\](?=\s*\r?\n|$)/;
+    var comments       = /^;.*?(?=\r?\n|$)/;
+    var nameEqualValue = /^([^\s=]*?)\s*=\s*(.*?)(?=\s*\r?\n|$)/;
+    var any            = /^.*(?=\r?\n|$)/;
 
     var out = [];
     var m = null;
