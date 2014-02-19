@@ -29,7 +29,7 @@ span.igualdad { background-color: green }
 span.any { background-color: red }
 
 body {
-  background: url(./images.jpg) no-repeat center center fixed;
+  background: url(../images.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
