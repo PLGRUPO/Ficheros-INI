@@ -36,14 +36,12 @@ function parseInput(contents) {
     finaloutput.innerHTML = pretty;
 }
 
-var temp = '<li> <span class = "<%= t.type %>"> <%= s %> </span>\n';
-
 function tokensToString(tokens) {
     var r = '';
     for(var i in tokens) {
         var t = tokens[i];
         var s = JSON.stringify(t, undefined, 2);
-        s = _.template(temp, {t: t, s: s});
+        s = _.template(elementTemplate.innerHTML, {t: t, s: s});
         r += s;
     }
     return '<ol>\n'+r+'</ol>';
@@ -60,32 +58,31 @@ function lexer(input) {
     var m = null;
 
     while (input != '') {
-    if (m = blanks.exec(input) ) {
-        input = input.substr(m.index+m[0].length);
-        out.push({ type : "Blancos", match: m });
-    }
-    else if (m = iniheader.exec(input)) {
-        input = input.substr(m.index+m[0].length);
-        out.push({ type : "Header", match: m });
-    }
-    else if (m = comments.exec(input)) {
-        input = input.substr(m.index+m[0].length);
-        out.push({ type : "Comentarios", match: m });
-    }
-    else if (m = nameEqualValue.exec(input)) {
-        input = input.substr(m.index+m[0].length);
-        out.push({ type : "Igualdad", match: m });
-    }
-    else if (m = any.exec(input)) {
-        out.push({ type : "Any", match: m });
-        input = '';
-    }
-    else {
-        alert("Fatal Error!"+input.substr(input,0,20));
-        input = '';
-    }
-
-    console.log("_"+input+"_");
+        if (m = blanks.exec(input) ) {
+            input = input.substr(m.index+m[0].length);
+            out.push({ type : "Blancos", match: m });
+        }
+        else if (m = iniheader.exec(input)) {
+            input = input.substr(m.index+m[0].length);
+            out.push({ type : "Header", match: m });
+        }
+        else if (m = comments.exec(input)) {
+            input = input.substr(m.index+m[0].length);
+            out.push({ type : "Comentarios", match: m });
+        }
+        else if (m = nameEqualValue.exec(input)) {
+            input = input.substr(m.index+m[0].length);
+            out.push({ type : "Igualdad", match: m });
+        }
+        else if (m = any.exec(input)) {
+            out.push({ type : "Any", match: m });
+            input = '';
+        }
+        else {
+            alert("Fatal Error!"+input.substr(input,0,20));
+            input = '';
+        }
+        //console.log("_"+input+"_");
     }
     return out;
 }
