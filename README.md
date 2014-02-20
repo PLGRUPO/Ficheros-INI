@@ -30,8 +30,8 @@ Enlaces
 
 ##### Desarrollada por
 
-*  Sergio  [Ver Perfil][2]
-* JuanFrancisco González Ramos [Ver Perfil][3]
+*  Sergio M Afonso  [Ver Perfil][2]
+* Juan F González Ramos [Ver Perfil][3]
 
 
 License
