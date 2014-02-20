@@ -46,26 +46,15 @@ body {
   box-shadow: 0 0 10px #888;
 }
 
-
-#filedrag
+#dragandrophandler
 {
-	display: block;
-	font-weight: bold;
-	text-align: center;
-	padding: 1em 0;
-	margin: 1em 0;
-	color: #555;
-	border: 2px dashed #555;
-	border-radius: 7px;
-	cursor: default;
-}
-
-#filedrag:hover
-{
-	color: #f00;
-	border-color: #f00;
-	border-style: solid;
-	box-shadow: inset 0 10px 10px #888;
+border:2px dotted #0B85A1;
+width:400px;
+color:#92AAB0;
+text-align:left;vertical-align:middle;
+padding:10px 10px 10 10px;
+margin-bottom:10px;
+font-size:200%;
 }
 
 #out{

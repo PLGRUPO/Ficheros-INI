@@ -82,6 +82,7 @@ function lexer(input) {
             alert("Fatal Error!"+input.substr(input,0,20));
             input = '';
         }
+        //console.log("_"+input+"_");
     }
     return out;
 }
