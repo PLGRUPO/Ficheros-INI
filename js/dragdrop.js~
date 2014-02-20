@@ -50,7 +50,7 @@ function handleFileUpload(files,obj)
  
         var status = new createStatusbar(obj); //Using this we can set progress.
         status.setFileNameSize(files[i].name,files[i].size);
-     //   sendFileToServer(fd,status);
+        sendFileToServer(fd,status);
  alert("dfgdfg");
    }
 }

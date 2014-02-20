@@ -25,7 +25,7 @@
 
 <div style="float:left;"> <input type="file" class="btn btn-default" id="fileinput" /> </div>
    
-   <div id="dragandrophandler">Drag & Drop Files Here</div>
+        <div id="filedrag">or drop files here</div>
     <br>
     <div id="out" class="hidden">
       <table class="table">
