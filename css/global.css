@@ -49,12 +49,19 @@ body {
 #dragandrophandler
 {
 	border:2px dotted #0B85A1;
-	width:400px;
-	color:#92AAB0;
+	width:600px;
+	color:#000;
 	text-align:left;vertical-align:middle;
 	padding:10px 10px 10 10px;
 	margin-bottom:10px;
 	font-size:200%;
+	background-color: white;
+	opacity:0.4;
+}
+#dragandrophandler:hover
+{
+
+	opacity:0.8;
 }
 
 #out{

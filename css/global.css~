@@ -14,20 +14,20 @@ html *
 
 h1            { text-align: center; font-size: x-large; }
 th, td        { vertical-align: top; text-align: left; }
-input        { text-align: right;  border: none;}     /* Align input to the right  */
-textarea     { border: outset; border-color: white; }
-table        { border-color: #333; }
-.hidden      { display: none; }
-.unhidden    { display: block; }
-table.center { margin-left:auto; margin-right:auto; }
-#result      { border-color: red; }
-pre.output   { background-color: white; }
+input         { text-align: right;  border: none;}     /* Align input to the right  */
+textarea      { border: outset; border-color: white; }
+table         { border-color: #333; }
+.hidden       { display: none; }
+.unhidden     { display: block; }
+table.center  { margin-left:auto; margin-right:auto; }
+#result       { border-color: red; }
+pre.output    { background-color: white; }
 span.repeated { background-color: red }
-span.header { background-color: blue }
+span.header   { background-color: blue }
 span.comentarios { background-color: gray }
-span.blancos { background-color: white }
+span.blancos  { background-color: white }
 span.igualdad { background-color: green }
-span.any { background-color: red }
+span.any      { background-color: red }
 
 body {
   background: url(../images.jpg) no-repeat center center fixed;
@@ -48,13 +48,20 @@ body {
 
 #dragandrophandler
 {
-border:2px dotted #0B85A1;
-width:400px;
-color:#92AAB0;
-text-align:left;vertical-align:middle;
-padding:10px 10px 10 10px;
-margin-bottom:10px;
-font-size:200%;
+	border:2px dotted #0B85A1;
+	width:600px;
+	color:#92AAB0;
+	text-align:left;vertical-align:middle;
+	padding:10px 10px 10 10px;
+	margin-bottom:10px;
+	font-size:200%;
+	background-color: white;
+	opacity:0.4;
+}
+#dragandrophandler:hover
+{
+
+	opacity:0.8;
 }
 
 #out{
